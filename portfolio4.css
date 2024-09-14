@@ -1,0 +1,297 @@
+/* Reset some default styles */
+body, h1, h2, h3, p, ul, li, a, form {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-size: large;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+}
+
+/* Header */
+header {
+    background: rgb(44, 43, 43);
+    color: beige;
+    padding: 10px 0;
+    position: fixed;
+    width: 100%;
+    top: 0;
+    left: 0;
+    z-index: 1000;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.logo {
+    float: left;
+    font-size: 1.5em;
+}
+
+nav {
+    float: right;
+}
+
+.nav-list {
+    list-style: none;
+}
+
+.nav-list li {
+    display: inline;
+    margin-left: 10px;
+}
+
+.nav-list a {
+    color: beige;
+    text-decoration: none;
+}
+
+.menu-toggle {
+    display: none;
+}
+
+/* Hero Section */
+.hero {
+    background-image: linear-gradient(rgb(44, 43, 43),rgb(65, 65, 65));
+    color: beige;
+    text-align: center;
+    text-align: justify;
+    padding: 100px 20px;
+}
+
+.hero h1 {
+    font-size: 2em;
+}
+
+.hero p {
+    font-size: 1.2em;
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background: #333;
+    color: #fff;
+    border: 2px solid beige;
+    text-decoration: none;
+    border-radius: 5px;
+}
+
+.btn:hover {
+    background: beige;
+    color: #2c2c2c;
+    transition-duration: 0.5s;
+}
+
+/* About Section */
+.about {
+    padding: 20px;
+    color: #2c2c2c;
+    background-image: linear-gradient(beige,white);
+    text-align: center;
+}
+
+.about-photo {
+    width: 180px;
+    height: 200px;
+    border: 10px solid rgb(33, 33, 33);
+    border-radius: 10%;
+    margin: 10px 0;
+}
+#abt{
+    text-align: justify;
+}
+.skills {
+    list-style: none;
+    
+    padding: 0;
+}
+
+.skills li {
+    display: inline-block;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    margin: 5px;
+    border-radius: 5px;
+}
+
+/* Portfolio Section */
+.portfolio {
+    padding: 20px;
+    background-image: linear-gradient(rgb(44, 43, 43),rgb(116, 115, 115));
+    color: beige;
+}
+
+.portfolio-grid {
+    display: flex;
+    background-color: rgb(48, 48, 48);
+    flex-wrap: wrap;
+    
+    gap: 15px;
+}
+
+.portfolio-item {
+    flex: 1;
+    min-width: 300px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.portfolio-item img {
+    width: 100%;
+    border-radius: 5px;
+}
+
+.portfolio-item h3 {
+    margin: 10px 0;
+}
+
+/* Testimonials Section */
+.testimonials {
+    padding: 20px;
+    color: #2c2c2c;
+    text-align: center;
+}
+/* Basic Reset */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Rating Container */
+.rating {
+    direction: rtl;
+    display: inline-flex;
+    font-size: 2em;
+}
+
+/* Hide Radio Buttons */
+.rating input {
+    display: none;
+}
+
+/* Star Labels */
+.rating label {
+    color: #ccc;
+    cursor: pointer;
+    transition: color 0.3s;
+}
+
+/* Stars on Hover */
+.rating label:hover,
+.rating label:hover ~ label {
+    color: #f5c518;
+}
+
+/* Stars Selected */
+.rating input:checked ~ label {
+    color: #f5c518;
+}
+
+/* Stars Selected - Specific Rating */
+.rating input:checked ~ input:checked ~ label {
+    color: #f5c518;
+}
+
+.testimonial {
+    margin: 20px 0;
+    color: #2c2c2c;
+}
+
+/* Contact Section */
+.contact {
+    padding: 20px;
+    background-image: linear-gradient(white,beige);
+    color: #2c2c2c;
+}
+
+.contact form {
+    display: flex;
+    flex-direction: column;
+}
+
+.contact label {
+    margin: 10px 0 5px;
+}
+
+.contact input, .contact textarea {
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.contact button {
+    padding: 10px;
+    background: #333;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.contact button:hover {
+    background: #555;
+}
+
+.social-links {
+    margin-top: 10px;
+}
+
+.social-links a {
+    margin: 0 10px;
+    color: #333;
+    text-decoration: none;
+}
+
+/* Footer */
+footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .menu-toggle {
+        display: block;
+        background: #333;
+        color: #fff;
+        border: none;
+        padding: 10px;
+        font-size: 1.2em;
+        cursor: pointer;
+    }
+
+    .nav-list {
+        display: none;
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .nav-list.active {
+        display: flex;
+    }
+
+    .nav-list li {
+        margin: 10px 0;
+    }
+
+    .hero h1 {
+        font-size: 1.5em;
+    }
+
+    .hero p {
+        font-size: 1em;
+    }
+}

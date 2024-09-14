@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="wrokingpage.css">
+    <style>
+        /* Add some basic styling for the new buttons */
+        .device-button {
+            padding: 10px 20px;
+            margin: 5px;
+            border: none;
+            border-radius: 5px;
+            color: white;
+            cursor: pointer;
+        }
+        #desktop-button {
+            background-color: #4CAF50; /* Green */
+        }
+        #mobile-button {
+            background-color: #008CBA; /* Blue */
+        }
+        .error-message {
+            color: #d9534f; /* Red color for error message */
+            font-size: 16px;
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
+    <div id="form">
+        <form id="device-form" action="index.html">
+            <h1>Welcome to WebKrish</h1>
+            <h2>Sign up to continue</h2>
+            <fieldset>
+                <legend>Enter details</legend>
+                <div id="fname">
+                    <label for="Full name">Full name :-</label>
+                    <input id="input1" title="Please enter your full name" required="Fill to continue" type="text" placeholder="Enter your name here....."><br><br>
+                </div>
+                <div id="email">
+                    <label for="E-mail">E-mail :-</label>
+                    <input id="input2" title="please enter your valid email address" required="Fill to continue" type="email" name="E-mail" placeholder="Enter your E-mail"><br><br>
+                </div>
+                <h3>Attention :-</h3>
+                <h4 style="font-size: medium;">For the best experience and functionality, please select the device you are using</h4>
+                <div id="device-selection">
+                    <button id="desktop-button" class="device-button">Desktop</button>
+                    <button id="mobile-button" class="device-button">Mobile</button>
+                </div>
+                <div id="error-message" class="error-message"></div>
+                <div id="submit">
+                    <input id="button" type="submit" value="Submit">
+                </div><br><br>
+            </fieldset>
+        </form>
+    </div>
+    <script>
+        function getDeviceType() {
+            const userAgent = navigator.userAgent || navigator.vendor || window.opera;
+            if (/android|iphone|ipad|iPod|blackberry|iemobile|opera mini/i.test(userAgent)) {
+                return 'mobile';
+            }
+            return 'desktop';
+        }
+
+        const deviceType = getDeviceType();
+
+        document.getElementById('desktop-button').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            if (deviceType === 'desktop') {
+                window.location.href = 'desktop.html'; // Replace with your actual desktop website URL
+            } else {
+                document.getElementById('error-message').textContent = 'Error: You selected Desktop but are using a mobile device.';
+            }
+        });
+
+        document.getElementById('mobile-button').addEventListener('click', function(event) {
+            event.preventDefault(); // Prevent the form from submitting
+            if (deviceType === 'mobile') {
+                window.location.href = 'Mobile.html'; // Replace with your actual mobile website URL
+            } else {
+                document.getElementById('error-message').textContent = 'Error: You selected Mobile but are using a desktop device.';
+            }
+        });
+
+        document.getElementById('device-form').addEventListener('submit', function(event) {
+            // Prevent form submission if no device is selected
+            event.preventDefault();
+            document.getElementById('error-message').textContent = 'Please select a device before submitting.';
+        });
+    </script>
+</body>
+</html>

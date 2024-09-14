@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="portfolio4.css">
+    <script src="portfolio4.js"></script>
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container">
+            <div class="logo">Krish Pachchigar</div>
+            <nav>
+                <button class="menu-toggle" aria-label="Open menu">&#9776;</button>
+                <ul class="nav-list">
+                    <li><a  href="#hero">Home</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#portfolio">Skills</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section  id="hero" class="hero">
+        <div class="hero-content">
+            <h1>Hi, I'm Krish Pachchigar</h1><br>
+            <p>Welcome! I’m Krish Pachchigar, a versatile UX/UI professional and web developer dedicated to crafting seamless and engaging digital experiences. With a strong foundation in both design and development, I bridge the gap between aesthetic vision and technical execution to deliver user-centric solutions that are both beautiful and functional. My approach combines thoughtful design with robust development practices to ensure every project not only meets user needs but also exceeds expectations.</p><br>
+            <a href="#portfolio" class="btn">Explore CV</a>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <h2>About Me</h2>
+            <img src="krish4.jpg" alt="Your Photo" class="about-photo">
+            <p id="abt">With a strong foundation in UX/UI design, I excel at creating intuitive and visually appealing user experiences that enhance engagement and satisfaction. My proficiency in HTML and CSS allows me to transform design concepts into functional, responsive web interfaces with precision and efficiency. Additionally, my video editing skills enable me to produce compelling multimedia content that captures and maintains audience attention. Combining these abilities, I offer a comprehensive skill set that bridges design, development, and content creation, ensuring cohesive and impactful digital experiences.</p>
+            <ul class="skills">
+                <li>HTML</li>
+                <li>CSS</li>
+                <li>UX/UI</li>
+                <!-- Add more skills as needed -->
+            </ul>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio">
+        <div class="container">
+            <h2>My skills</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item">
+                    <h3>UX/UI</h3>
+                    <p>Done certification of UX/UI(Google).I can create your boring designs into stunning, eye-catching visuals that captivate and engage your audience.</p>
+                    <h3>Html & CSS</h3>
+                    <p>Crafting HTML and CSS into visually stunning experiences that captivate and convert.</p>
+                    <h3>Video editing</h3>
+                    <p>Transforming your raw footage into captivating stories—where every edit is a masterpiece.</p>
+                </div>
+                <!-- Repeat for more portfolio items -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonials" class="testimonials">
+        <div class="container">
+            <p style="font-size: larger;font-weight: bold;">Rate your experience</p>
+            <div class="rating">
+                <input type="radio" name="rating" id="rating-5" value="5">
+                <label for="rating-5" class="star">&#9733;</label>
+                <input type="radio" name="rating" id="rating-4" value="4">
+                <label for="rating-4" class="star">&#9733;</label>
+                <input type="radio" name="rating" id="rating-3" value="3">
+                <label for="rating-3" class="star">&#9733;</label>
+                <input type="radio" name="rating" id="rating-2" value="2">
+                <label for="rating-2" class="star">&#9733;</label>
+                <input type="radio" name="rating" id="rating-1" value="1">
+                <label for="rating-1" class="star">&#9733;</label>
+            </div><br>
+                <input style="background-color: #333;color: white;border-radius: 5px;" type="button" value="Great!!">
+            </div>
+            <!-- Repeat for more testimonials -->
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <h2>Contact Me</h2>
+            <form action="your-server-side-script" method="post">
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name" required>
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email" required>
+                <label for="message">Message:</label>
+                <textarea id="message" name="message" required></textarea>
+                <button type="submit" class="btn">Send Message</button>
+            </form>
+            <div class="social-links">
+                <a href="https://www.instagram.com/iam.krish007/" target="_blank">Instagram</a>
+                <a href="https://mail.google.com/" target="_blank">Gmail</a>
+                <!-- Add more social media links -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <p>&copy; 2024 Krish Pachchigar. All rights reserved.</p>
+        </div>
+    </footer>
+</body>
+</html>

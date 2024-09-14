@@ -1,0 +1,255 @@
+#headername{
+    display: inline-block;
+    font-size: xx-large;
+    margin-left: 10%;
+    color: beige;
+}
+body{
+    background-color: black;
+    
+}
+nav{
+    background-color: rgb(44, 43, 43);
+    height: 55px;
+    width: 100%;
+    padding-top: 10px;
+    position: fixed;
+ 
+}
+header{
+    background-color: rgb(74, 73, 73);
+}
+#headerintro{
+  float: right;
+  display: block;
+  margin-right: 15%;
+  margin-top: 7%;
+}
+span{
+    font-size: 70px;
+    color: beige;
+}
+#links1{
+    display: inline-block;
+    margin-left: 40%;
+    font-size: larger;
+}
+#img1{
+    height: 900px;
+    width: 43%;
+    display: inline-block;
+}
+.h{
+    margin-right: 20px;
+    text-decoration: none;
+    color: beige;
+}
+.h:hover{
+    cursor:pointer;
+    color:chartreuse;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 246, 243);
+    transition:  0.5s ease-in-out;
+    transition-property: initial;
+}
+.s{
+    margin-right: 20px;
+    text-decoration: none;
+    color: beige;
+}
+.s:hover{
+    
+    color:chartreuse;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 246, 243);
+    transition:  0.5s ease-in-out;
+    transition-property: initial;
+}
+.a{
+    margin-right: 20px;
+    text-decoration: none;
+    color: beige;
+}
+.a:hover{
+    
+    color: chartreuse;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 246, 243);
+    transition:  0.5s ease-in-out;
+    transition-property: initial;
+}
+.c{
+    margin-right: 20px;
+    text-decoration: none;
+    color: beige;
+}
+.c:hover{
+    
+    color: chartreuse;
+    font-size: x-large;
+    text-decoration: underline;
+    text-decoration-color: rgb(246, 246, 243);
+    transition:  0.5s ease-in-out;
+    transition-property: initial;
+}
+#intropara{
+    width: 40%;
+    float: right;
+    display: block;
+    margin-top: -45%;
+    margin-right: 10%;
+    font-size: 30px;
+    text-align: justify;
+    color: beige;
+}
+/*Mian content*/
+#myskills{
+    height: 850px;
+    background-color: rgb(62, 62, 62);
+    background-image: linear-gradient(beige,white);
+}
+#myskl1{
+    width: 500px;
+    height: 850px;
+    text-align: center;
+    margin-top: -5.5%;
+    background-color: beige;
+}
+#headingmyskl{
+    padding-top: 70%;
+   font-size: 80px;
+   color: rgb(66, 66, 66);
+}
+#contentpara{
+    width: 40%;
+    float: right;
+    display: block;
+    margin-top: -55%;
+    margin-right: 10%;
+    font-size: 20px;
+    text-align: justify;
+    color: rgb(66, 66, 66);
+}
+/*progress bar*/
+.progress-container {
+    width: 200px;
+}
+
+.progress-bar {
+    background-color: #ddd;
+    border-radius: 5px;
+    overflow: hidden;
+    margin-bottom: 15px;
+    position: relative;
+    height: 30px;
+}
+
+.progress-fill {
+    background-color: #242424;
+    height: 100%;
+    width: 0%;
+    transition: width 3s ease-in-out;
+}
+
+.progress-text {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+}
+#progressbar{
+    width: 40%;
+    float: right;
+    display: block;
+    margin-top: -25%;
+    margin-right: 10%;
+}
+/*progress bar*/
+#aboutme{
+    height: 850px;
+    background-color: rgb(62, 62, 62);
+    background-image: linear-gradient(rgb(35, 35, 35),rgb(18, 18, 18));
+}
+#abm1{
+    width: 500px;
+    height: 850px;
+    text-align: center;
+    margin-top: -5%;
+    background-color: rgb(74, 73, 73);
+}
+#headingaboutme{
+    padding-top: 70%;
+    font-size: 80px;
+    color: beige;
+}
+#img2{
+    height: 350px;
+    float: right;
+    display: block;
+    margin-top: -55%;
+    margin-right: 20%;
+    border: 10px  solid beige;
+    border-radius: 10%;
+}
+#contentpara2{
+    width: 40%;
+    float: right;
+    display: block;
+    margin-top: -28%;
+    margin-right: 10%;
+    font-size: 25px;
+    text-align: justify;
+    color: beige;
+}
+#contact{
+    height: 850px;
+    background-color: rgb(62, 62, 62);
+    background-image:   linear-gradient(beige,white);;
+}
+#c1{
+    width: 500px;
+    height: 850px;
+    text-align: center;
+    margin-top: -5%;
+    background-color: beige;
+}
+#headingcontact{
+    padding-top: 70%;
+    font-size: 80px;
+    color: rgb(66, 66, 66);
+}
+#contentpara3{
+    width: 40%;
+    float: right;
+    display: block;
+    margin-top: -40%;
+    margin-right: 10%;
+    font-size: 25px;
+    text-align: justify;
+    color: rgb(66, 66, 66);
+}
+#gm{
+    float: right;
+    display: inline-block;
+    margin-right: 7%;
+    text-decoration: none;
+    color: #242424;
+}
+#insta{
+    float: right;
+    display: inline-block;
+    margin-right: 30%;
+    text-decoration: none;
+    color: #242424;
+}
+#tag{
+    margin-top: 70%;
+    margin-left: 8%;
+}
+/*Responsive layout*/
+
