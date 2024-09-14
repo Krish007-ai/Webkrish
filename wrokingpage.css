@@ -1,93 +1,191 @@
-h2{
-    text-align: center;
+/* Workingpage.css */
+
+/* General Body Styles */
+body {
+    background-color: rgb(74, 73, 73);
+    color: beige;
+    font-family: Arial, sans-serif; /* Set a base font family for consistency */
+    margin: 0;
+    padding: 0;
 }
-h1{
+
+/* Header Styles */
+h1 {
     text-align: center;
     font-size: 45px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    margin: 0;
 }
-#email{
-    margin-left: 7.9%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: 25px;
+
+h2 {
+    text-align: center;
+    font-size: 24px; /* Adjusted for smaller screens */
+    margin: 0;
 }
-#fname{
-    margin-top: -3%;
-    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
-    font-size: medium;
-    font-size: 25px;
+
+h3, h4 {
+    text-align: center; /* Center text for better alignment */
 }
-#submit{
-margin-left:14%;
-margin-top: 8%;
+
+h4 {
+    font-size: 16px; /* Adjusted for smaller screens */
+    margin: 0;
 }
-#button{
-    color: beige ;
+
+/* Form Styles */
+#form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh; /* Full viewport height */
+    padding: 20px;
+}
+
+fieldset {
+    width: 100%;
+    max-width: 600px; /* Responsive width */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 5px 5px 20px rgba(202, 221, 107, 0.5);
+    border-radius: 5px;
+    border: 2px solid rgb(244, 244, 178);
+}
+
+legend {
+    font-size: 1.25em; /* Adjusted font size */
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+/* Input Styles */
+input[type="text"],
+input[type="email"] {
+    background-color: rgb(74, 73, 73);
+    border: 3px solid beige;
+    color: rgb(255, 255, 255);
+    width: 100%; /* Full width for responsiveness */
+    padding: 10px;
+    box-sizing: border-box; /* Includes padding in width */
+    margin-bottom: 15px;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus {
+    outline: 2px solid beige;
+}
+
+/* Button Styles */
+#button {
+    color: beige;
     background-color: rgb(74, 73, 73);
     border: 5px solid rgb(241, 241, 203);
-    border-radius: 0%;
+    border-radius: 0;
     cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     font-size: 15px;
-    width: 300px;   
+    width: 100%;
+    padding: 10px;
+    box-sizing: border-box;
 }
-#button:hover{
+
+#button:hover {
     color: #333232;
     background-color: beige;
     border: 2px solid #000000;
-    transition-duration: 1s;
-    width: 300px;
-    height: 30px;
-    transition-duration: ease-out;
+    transition: all 0.3s ease;
 }
-fieldset{
-    height: 450px;
-    width: 30%;
-   margin: 0% auto;
-   align-content: center;
-   box-shadow: 5px 5px 20px rgba(202, 221, 107, 0.5);
-   border-radius: 1.9%;
-   border: 2px solid rgb(244, 244, 178);
+
+/* Device Button Styles */
+.device-button {
+    padding: 10px 20px;
+    margin: 5px;
+    border: none;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 16px;
 }
-legend{
-    font-size: larger;
-   font-family: Verdana, Geneva, Tahoma, sans-serif;
+
+#desktop-button {
+    background-color: #4CAF50; /* Green */
 }
-form{
-    margin-top: 9%;
+
+#mobile-button {
+    background-color: #008CBA; /* Blue */
 }
-body{
-    background-color: rgb(74, 73, 73);
-    color: beige;
+
+/* Error Message Styles */
+.error-message {
+    color: #d9534f; /* Red color for error message */
+    font-size: 16px;
+    margin-top: 10px;
 }
-input{
-    background-color: rgb(74, 73, 73);
-    border: 1px solid beige;
-    color: rgb(255, 255, 255);
-    width: 200px; 
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    h1 {
+        font-size: 36px;
+    }
+
+    h2 {
+        font-size: 20px;
+    }
+
+    h4 {
+        font-size: 14px;
+    }
+
+    #form {
+        padding: 10px;
+    }
+
+    fieldset {
+        width: 90%;
+        padding: 15px;
+    }
+
+    #device-selection {
+        text-align: center;
+    }
+
+    .device-button {
+        width: 100%;
+        padding: 15px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
 }
-#input1{
-    width: 250px;
-    border-radius: 0%;
-    border: 3px solid beige;
+
+@media (max-width: 480px) {
+    h1 {
+        font-size: 28px;
+    }
+
+    h2 {
+        font-size: 18px;
+    }
+
+    h4 {
+        font-size: 12px;
+    }
+
+    fieldset {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .device-button {
+        padding: 12px;
+        font-size: 14px;
+    }
+
+    input[type="text"],
+    input[type="email"] {
+        width: 100%;
+    }
 }
-#input1:focus{
-    color: rgb(255, 255, 255);
-       outline: 2px solid beige;
-}
-#input2{
-    width: 250px;
-    border: 3px solid beige;
-}
-#input2:focus{
-    color: rgb(255, 255, 255);
-       outline: 2px solid beige;
-}
-#device-selection{
-    margin-left: 25%;
-}
-h4{
-    text-align: justify;
-}
+
 
 
