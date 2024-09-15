@@ -2,7 +2,7 @@
 
 /* General Body Styles */
 body {
-    background-color: rgb(74, 73, 73);
+    background-color: rgb(61, 61, 61);
     color: beige;
     font-family: Arial, sans-serif; /* Set a base font family for consistency */
     margin: 0;
@@ -148,13 +148,13 @@ input[type="email"]:focus {
     }
 
     .device-button {
-        width: 100%;
+        width: 70%;
         padding: 15px;
     }
 
     input[type="text"],
     input[type="email"] {
-        width: 100%;
+        width: 70%;
     }
 }
 
@@ -172,7 +172,7 @@ input[type="email"]:focus {
     }
 
     fieldset {
-        width: 100%;
+        width: 80%;
         padding: 10px;
     }
 
@@ -183,9 +183,12 @@ input[type="email"]:focus {
 
     input[type="text"],
     input[type="email"] {
-        width: 100%;
+        width: 90%;
     }
 }
+
+
+
 
 
 
