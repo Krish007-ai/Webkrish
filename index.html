@@ -90,6 +90,12 @@
             event.preventDefault();
             document.getElementById('error-message').textContent = 'Please select a device before submitting.';
         });
+
+        // Disable right-click
+        document.addEventListener('contextmenu', function(event) {
+                        event.preventDefault();
+                    });
     </script>
 </body>
 </html>
+
