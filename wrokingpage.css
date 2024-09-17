@@ -2,9 +2,9 @@
 
 /* General Body Styles */
 body {
-    background-color: rgb(61, 61, 61);
-    color: beige;
-    font-family: Arial, sans-serif; /* Set a base font family for consistency */
+    background-color: rgb(255, 255, 255);
+    color: rgb(25, 98, 233);
+   font-family: monospace;
     margin: 0;
     padding: 0;
 }
@@ -13,7 +13,8 @@ body {
 h1 {
     text-align: center;
     font-size: 45px;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+   font-family: monospace;
+   text-shadow:5px 5px 20px rgba(63, 115, 245, 0.5) ;
     margin: 0;
 }
 
@@ -46,38 +47,43 @@ fieldset {
     max-width: 600px; /* Responsive width */
     margin: 0 auto;
     padding: 20px;
-    box-shadow: 5px 5px 20px rgba(202, 221, 107, 0.5);
+    box-shadow: 5px 5px 20px rgba(63, 115, 245, 0.5);
     border-radius: 5px;
-    border: 2px solid rgb(244, 244, 178);
+    border: 2px solid rgb(48, 116, 234);
 }
 
 legend {
     font-size: 1.25em; /* Adjusted font size */
-    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-family: monospace;
 }
 
 /* Input Styles */
 input[type="text"],
 input[type="email"] {
-    background-color: rgb(74, 73, 73);
-    border: 3px solid beige;
-    color: rgb(255, 255, 255);
+    background-color: rgb(255, 255, 255);
+    border: 2px solid rgb(48, 116, 234);
+    box-shadow: 5px 5px 20px rgba(63, 64, 64, 0.365);
+    font-family: monospace;
+    font-size: large;
+    color: rgb(0, 0, 0);
     width: 100%; /* Full width for responsiveness */
-    padding: 10px;
+    padding: 15px;
     box-sizing: border-box; /* Includes padding in width */
     margin-bottom: 15px;
 }
-
+label{
+    font-family: monospace;
+}
 input[type="text"]:focus,
 input[type="email"]:focus {
-    outline: 2px solid beige;
+    outline: 2px solid rgb(53, 114, 236);
 }
 
 /* Button Styles */
 #button {
-    color: beige;
-    background-color: rgb(74, 73, 73);
-    border: 5px solid rgb(241, 241, 203);
+    color: rgb(48, 116, 234);;
+    background-color: rgb(255, 255, 255);
+    border: 5px solid rgb(48, 116, 234);;
     border-radius: 0;
     cursor: pointer;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
@@ -88,10 +94,11 @@ input[type="email"]:focus {
 }
 
 #button:hover {
-    color: #333232;
-    background-color: beige;
-    border: 2px solid #000000;
-    transition: all 0.3s ease;
+    color: #ffffff;
+    background-color: rgb(48, 116, 234);;
+    box-shadow: 5px 5px 20px rgba(63, 115, 245, 0.5);
+height: 50px;
+    transition: all 0.3s ease-in-out;
 }
 
 /* Device Button Styles */
@@ -186,6 +193,9 @@ input[type="email"]:focus {
         width: 90%;
     }
 }
+
+
+
 
 
 
